@@ -2,62 +2,47 @@ html,
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
-  width: 146px;
-  height: 32px;
-  position: absolute;
-  padding-left: 263px;
-  padding-top: 40px;
   font-weight: bold;
   font-size: 24px;
   line-height: 32;
-  display: flex;
-  align-items: center;
-  float: left;
 }
 
-.menu__item {
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/*.menu__item {
   width: 30px;
   height: 17px;
   font-size: 14px;
   padding-top: 51px;
   line-height: 16px;
-  float: right;
 }
+*/
 
 .main-content__title {
-  position: absolute;
-  width: 434px;
-  height: 195px;
-  left: calc(50% - 434px/2 - 248px);
-  padding-top: 212px;
   font-weight: bold;
   font-size: 50px;
   line-height: 66px;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
 }
 
 
 .main-content__sibtitle {
-  position: absolute;
   width: 367px;
   height: 43px;
-  left: calc(50% - 367px/2 - 281.5px);
   font-size: 18px;
   line-height: 21px;
-  padding-top: 447px;
 }
 
 .main-content__button{
-  position: absolute;
   width: 209px;
   height: 44px;
-  left: calc(50% - 209px/2 - 359.5px);
   top: 531px;
   background: #0056EC;
   border-radius: 4px;
