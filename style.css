@@ -1,7 +1,7 @@
-html,
 body {
-    font-family: 'Roboto', sans-serif;
+margin: 0;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,8 @@ body {
 .logo {
   font-weight: bold;
   font-size: 24px;
-  line-height: 32;
+  line-height: 32px;
+  font-family: 'PT Serif';
 }
 
 .menu {
@@ -17,14 +18,9 @@ body {
   align-items: center;
 }
 
-/*.menu__item {
-  width: 30px;
-  height: 17px;
-  font-size: 14px;
-  padding-top: 51px;
-  line-height: 16px;
+.menu__item {
+font-family: 'Roboto', sans-serif;
 }
-*/
 
 .main-content__title {
   font-weight: bold;
@@ -32,19 +28,17 @@ body {
   line-height: 66px;
 }
 
-
 .main-content__sibtitle {
-  width: 367px;
-  height: 43px;
   font-size: 18px;
   line-height: 21px;
+  font-family: 'Roboto';
 }
 
 .main-content__button{
   width: 209px;
   height: 44px;
-  top: 531px;
   background: #0056EC;
   border-radius: 4px;
   color: #fff;
+  font-family: 'Roboto';
 }
