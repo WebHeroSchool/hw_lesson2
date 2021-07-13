@@ -2,15 +2,39 @@ body {
 margin: 0;
 }
 
+
 .header {
   display: flex;
   justify-content: space-between;
 }
 .logo {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  font-family: 'PT Serif';
+  padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/31px 'pt-serif', 'arial', 'helvetica','sans-serif';
+  position: relative;
+/* выриант для лого, если вставлять картинку 
+  width: 190px;
+  height: 35px;
+  background: url('img/logo.jpg')*/
+}
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  //border: dashed 1px red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_dark-blue {
+  background: #0056EC;
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
 }
 
 .menu {
