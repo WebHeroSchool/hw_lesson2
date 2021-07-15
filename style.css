@@ -13,7 +13,7 @@ margin: 0;
 .logo {
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px 'pt-serifbold', 'arial', 'helvetica','sans-serif';
+  font: bold 24px/31px 'pt_serifbold', 'arial', 'helvetica','sans-serif';
   position: relative;
 /* выриант для лого, если вставлять картинку
   width: 190px;
