@@ -13,7 +13,7 @@ margin: 0;
 .logo {
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px 'pt_serifbold', 'arial', 'helvetica','sans-serif';
+  font: bold 24px/31px 'pt_serifbold', 'Arial', 'Helvetica', sans-serif;
   position: relative;
 /* выриант для лого, если вставлять картинку
   width: 190px;
@@ -92,6 +92,7 @@ margin: 0;
   font-weight: bold;
   font-size: 50px;
   line-height: 66px;
+  font-family: 'pt_serifbold';
 }
 
 .main-content__sibtitle {
