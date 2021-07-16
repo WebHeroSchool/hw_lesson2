@@ -109,3 +109,24 @@ margin: 0;
   color: #fff;
   font-family: 'Roboto';
 }
+.header {
+  color: grey;
+  font: bolt;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.menu__item{
+  padding-left: 10px;
+}
+
+.main-section {
+  color: green;
+  text-align: center;
+  padding: 20px; 10px;
+}
+
+
+.main-content__sibtitle{
+  color: red;
+}
