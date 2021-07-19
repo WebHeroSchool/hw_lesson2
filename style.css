@@ -45,7 +45,7 @@ height: 1080px;
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 23px;
   font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -137,7 +137,7 @@ height: 1080px;
 
 .points{
   width: 100%;
-  margin-top:40px;
+  margin-top:20px;
   display: flex;
   justify-content: center;
 }
