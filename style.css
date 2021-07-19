@@ -1,5 +1,6 @@
 body {
 margin: 0;
+
 }
 
 .wrapper{
@@ -9,7 +10,7 @@ margin: 0;
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 246px;
+  margin-bottom: 170px;
 }
 .logo {
   padding: 40px 0;
@@ -89,12 +90,14 @@ margin: 0;
 }
 
 .main{
-  padding:0 63% 100px 0;
+  padding:0 63% 250px 0;
   background:top right no-repeat url(img/mainimg.jpg);
 }
 .main__title {
+  width: 567px;
+  height: 255px;
   margin: 0 0 40px 0;
-  font: bold 50px/65px 'pt_serifbold', Arial, helvetica, sans-serif;
+  font: bold 66px/88px 'pt_serifbold', Arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight{
@@ -102,8 +105,10 @@ margin: 0;
 }
 
 .main__sibtitle {
+  width: 455px;
+  height: 52px;
   margin: 0 0 41px 0;
-  font: 18px/21px 'Roboto', Arial, helvetica, sans-serif;
+  font: 22px/26px 'Roboto', Arial, helvetica, sans-serif;
 }
 
 /*.main__button{
@@ -127,25 +132,4 @@ margin: 0;
 
 .main__button:hover {
   opacity: .5;
-}
-.header {
-  color: grey;
-  font: bolt;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-.menu__item{
-  padding-left: 10px;
-}
-
-.main-section {
-  color: green;
-  text-align: center;
-  padding: 20px; 10px;
-}
-
-
-.main-content__sibtitle{
-  color: red;
 }
