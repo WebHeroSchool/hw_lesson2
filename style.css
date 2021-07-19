@@ -137,7 +137,9 @@ height: 1080px;
 
 .points{
   width: 100%;
-  margin-top:30px;
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
 }
 
 /*адаптация*/
