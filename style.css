@@ -40,7 +40,7 @@ body {
   background: #C8DBFB;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
@@ -52,10 +52,10 @@ body {
   text-decoration: none;
 }
 
-.menu__item:last-child{
+.menu__item:last-child {
   margin-right:11px;
 }
-.menu__item_active::after{
+.menu__item_active::after {
   position: absolute;
   display: block;
   content:'';
@@ -65,7 +65,7 @@ body {
   background: #0056EC;
 }
 
-.menu__item:after{
+.menu__item:after {
   position: absolute;
   left: 0;
   display: block;
@@ -86,7 +86,7 @@ body {
 }
 
 /*раздел main*/
-.main{
+.main {
   padding:0 63% 250px 0;
   margin-right: 7px;
   background:top right no-repeat url(img/mainimg.jpg);
@@ -100,7 +100,7 @@ body {
   font: bold 66px/88px 'pt_serifbold', Arial, helvetica, sans-serif;
 }
 
-.main__title-text_highlight{
+.main__title-text_highlight {
   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%);
 }
 
@@ -138,28 +138,45 @@ body {
 
 
 /*адаптация для 1366px*/
-/*@media (max-width: 1366px) {
+
+@media (max-width: 1366px) {
+  body {
+    width: 1366px;
+    height: 769px;
+  }
   .wrapper{
-    max-width: 930px;
-    max-height: 670px;
-    padding: 0px 31%;
+    width: 932px;
+    height: 670px;
+    padding: 0px 28%;
   }
   .header {
-  margin-bottom: 127px;
+  margin-bottom: 83px;
+  }
+  .main {
+    background-size: 54%;
+    padding-bottom: 125px;
   }
   .main__title{
+    padding-top: 5%;
+    width: 434px;
+    height: 195px;
+    font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
     margin-bottom: 40px;
-    font: bold 50px/66,25px 'pt_serifbold', Arial, helvetica, sans-serif;
   }
+
   .main__sibtitle{
-    margin-bottom: 41px;
-    font: 500 18px/21,09px 'Roboto', arial, helvetica, sans-serif;
+    margin:0 0 31px 0;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    width: 367px;
   }
 
   .main__button{
-    font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    width: 185px;
+    height: 17px;
   }
-
+  .points{
+}
 }
 /* END адаптация для 1366px*/
 
@@ -234,7 +251,6 @@ body {
   .main__button{
     font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     width: 209px;
-
   }
 
   /*бургер*/
