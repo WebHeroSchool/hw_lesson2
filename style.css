@@ -160,9 +160,9 @@ body {
   margin-right: 4px;
   }
   .main {
-    background-size: 57%;
+    background-size: 55%;
     padding-bottom: 125px;
-
+  margin-right: 0;
   }
   .main__title{
     padding-top: 5%;
