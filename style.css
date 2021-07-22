@@ -136,7 +136,6 @@ body {
   justify-content: center;
 }
 
-
 /*адаптация для 1366px*/
 
 @media (max-width: 1366px) {
@@ -145,16 +144,25 @@ body {
     height: 769px;
   }
   .wrapper{
-    width: 932px;
-    height: 670px;
-    padding: 0px 28%;
+    width: 68%;
   }
+
   .header {
-  margin-bottom: 83px;
+  margin-bottom: 82px;
+  }
+
+  .menu__item {
+    margin-right: 22px;
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+  }
+
+  .menu__item:last-child {
+  margin-right: 4px;
   }
   .main {
-    background-size: 54%;
+    background-size: 57%;
     padding-bottom: 125px;
+
   }
   .main__title{
     padding-top: 5%;
@@ -165,46 +173,63 @@ body {
   }
 
   .main__sibtitle{
-    margin:0 0 31px 0;
+    margin:0 0 33px 0;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
     width: 367px;
   }
 
   .main__button{
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
-    width: 185px;
-    height: 17px;
+    width: 180px;
+    height: 20px;
   }
   .points{
 }
 }
 /* END адаптация для 1366px*/
 
-
-
-/* @media (max-width: 1024px) {
+/*адаптация для 1024px*/
+ @media (max-width: 1024px) {
+   body {
+     width: 1024px;
+     height: 769px;
+   }
   .wrapper{
-    max-width: 930px;
-    padding: 0px 46px;
+    width: 91%;
+    //padding: 0px 46px;
   }
   .header {
-  margin-bottom: 125px;
+  margin-bottom: 85px;
   }
+  .menu__item {
+  margin-right: 22px;
+  }
+  .menu__item:last-child {
+  margin-right: 1px;
+}
+
+  .main {
+    background-size: 55%;
+    padding: 0 63% 250px 0;
+  }
+
   .main__title{
     margin-bottom: 40px;
     font: bold 50px/66,25px 'pt_serifbold', Arial, helvetica, sans-serif;
   }
   .main__sibtitle{
-    margin-bottom: 41px;
-    font: 500 18px/21,09px 'Roboto', arial, helvetica, sans-serif;
+    margin-bottom: 32px;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   }
 
   .main__button{
     font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    width: 179px;
+    height: 17px;
   }
 
 }
-*/
+/* END адаптация для 1024px*/
 
   /*адаптация 375px*/
 @media (max-width: 375px) {
