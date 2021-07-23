@@ -440,8 +440,8 @@ body {
     width: 267px;
     height: 96px;
     line-height: 41px;
+  }
 }
-
 @media (max-width: 582px){
   .header {
       margin-bottom: 1px;
