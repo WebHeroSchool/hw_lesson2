@@ -142,9 +142,25 @@ body {
   justify-content: center;
 }
 
+/*адаптация для 1571px*/
+@media (max-width: 1571px){
+.main__title {
+  font-size: 50px;
+  line-height: 66px;
+  }
+  .menu {
+    padding-top: 6px;
+  }
+  .main__title {
+    margin:  0;
+  }
+  .main {
+    background-size: 57%;
+  }
+}
 /*адаптация для 1366px*/
 
-@media (max-width: 1368px) {
+@media (max-width: 1367px) {
   .wrapper{
     width: 68%;
   }
@@ -164,7 +180,7 @@ body {
   .main {
     background-size: 55%;
     padding-bottom: 125px;
-  margin-right: 0;
+    margin-right: 0;
   }
   .main__title{
     padding-top: 5%;
@@ -186,12 +202,12 @@ body {
     height: 20px;
   }
   .points{
-}
+  }
 }
 /* END адаптация для 1366px*/
 
 /*адаптация для 1024px*/
- @media (max-width: 1026px) {
+ @media (max-width: 1025px) {
   .wrapper{
     width: 91%;
     //padding: 0px 46px;
@@ -204,7 +220,7 @@ body {
   }
   .menu__item:last-child {
   margin-right: 1px;
-}
+  }
 
   .main {
     background-size: 55%;
@@ -228,7 +244,120 @@ body {
 
 }
 /* END адаптация для 1024px*/
+@media (max-width: 769px){
+  .wrapper {
+    width: 87%;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger-menu{
+    display: inline-block;
+  }
 
+  .main__title {
+    font-size: 37px;
+    line-height: 46px;
+    height: 136px;
+    }
+
+    .main {
+      background-size: 52%;
+      padding-bottom: 107px;
+    }
+
+    .main__sibtitle {
+      font-size: 16px;
+      line-height: 18px;
+      width: 342px;
+      margin-bottom: 14px;
+  }
+  /*бургер*/
+  #menu__toggle {
+          opacity: 0;
+        }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+          transform: rotate(45deg);
+        }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0);
+        }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+  #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          left: 0;
+        }
+
+  .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 28px;
+          left: 87%;
+          width: 25px;
+          height: 26px;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: #0056EC;
+          transition-duration: .25s;
+        }
+  .menu__btn > span::before {
+          content: '';
+          top: -8px;
+        }
+  .menu__btn > span::after {
+          content: '';
+          top: 8px;
+        }
+
+  .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          text-align: center;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 171px 0;
+          list-style: none;
+          background-color: #fff;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          transition-duration: .25s;
+        }
+
+  .menu__item {
+          display: block;
+          padding: 22px 24px;
+          color: #000;
+          font-family: 'Roboto', sans-serif;
+          font-size: 30px;
+          line-height: 35,16;
+          font-weight: 500;
+          text-decoration: none;
+          transition-duration: .25s;
+        }
+  .menu__item:hover {
+          background-color: #fff;
+        }
+
+
+}
   /*адаптация 375px*/
 @media (max-width: 376px) {
 
@@ -266,19 +395,18 @@ body {
     height: 96px;
   }
   .main__sibtitle{
-    margin: 0 0 25px 0;
+    margin: 0 0 25px 15px;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
-    width: 266px;
+    width: 81%;
     height: 57px;
 
   }
 
   .main__button{
     font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
-    //width: 170px;
-    //padding: 15px 48px 11px 8px;
-    padding: 14px 25px 13px 16px;
+    margin-right: 10%;
+    padding: 15px 20px 13px 11px;
   }
 
   /*бургер*/
