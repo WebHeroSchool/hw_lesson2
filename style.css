@@ -431,7 +431,7 @@ body {
           }
 }
 
-@media (max-width: 671px){
+@media (max-width: 671px) {
   .wrapper {
     width: 87%;
   }
