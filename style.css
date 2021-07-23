@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  width: 1920px;
-  height: 1080px;
 }
 
 .wrapper{
@@ -138,11 +136,7 @@ body {
 
 /*адаптация для 1366px*/
 
-@media (max-width: 1366px) {
-  body {
-    width: 1366px;
-    height: 769px;
-  }
+@media (max-width: 1368px) {
   .wrapper{
     width: 68%;
   }
@@ -189,11 +183,7 @@ body {
 /* END адаптация для 1366px*/
 
 /*адаптация для 1024px*/
- @media (max-width: 1024px) {
-   body {
-     width: 1024px;
-     height: 769px;
-   }
+ @media (max-width: 1026px) {
   .wrapper{
     width: 91%;
     //padding: 0px 46px;
@@ -232,11 +222,11 @@ body {
 /* END адаптация для 1024px*/
 
   /*адаптация 375px*/
-@media (max-width: 375px) {
-  body {
-    width: 375px;
-    height: 667px;
+@media (max-width: 377px) {
+  .wrapper {
+    width: 87%;
   }
+
   .hamburger-menu{
     display: inline-block;
   }
@@ -245,23 +235,24 @@ body {
   }
 
   .header{
-    margin-bottom: 28px;
+    margin-bottom: 12px;
   }
 
   .logo {
-    padding: 24px 0;
+    padding: 22px 0;
     font-size: 0;
   }
   .main {
     text-align: center;
-    padding: 74% 0 0;
-    background-size: 74%;
+    padding-top:  80%;
+    padding-left: 33px;
+    background-size: 86%;
     background-position: top center;
-
+    
   }
   .main__title{
-    margin-bottom: 44px;
-    font: bold 30px/39px 'pt_serifbold', Arial, helvetica, sans-serif;
+    margin-bottom: 54px;
+    font: bold 30px/40px 'pt_serifbold', Arial, helvetica, sans-serif;
     padding-top: 0;
     width: 267px;
     height: 96px;
@@ -270,12 +261,15 @@ body {
     margin-bottom: 25px;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
-    width: 275px;
+    width: 266px;
+    height: 57px;
+
   }
 
   .main__button{
     font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     width: 209px;
+
   }
 
   /*бургер*/
@@ -303,8 +297,8 @@ body {
           display: flex;
           align-items: center;
           position: fixed;
-          top: 24px;
-          left: 89%;
+          top: 28px;
+          left: 87%;
           width: 25px;
           height: 26px;
           cursor: pointer;
@@ -340,7 +334,7 @@ body {
           width: 100%;
           height: 100%;
           margin: 0;
-          padding: 186px 0;
+          padding: 171px 0;
           list-style: none;
           background-color: #fff;
           box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
@@ -349,7 +343,7 @@ body {
 
   .menu__item {
           display: block;
-          padding: 24px 24px;
+          padding: 22px 24px;
           color: #000;
           font-family: 'Roboto', sans-serif;
           font-size: 30px;
