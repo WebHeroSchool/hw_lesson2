@@ -96,6 +96,11 @@ body {
   margin: 0 0 44px 0;
   padding-top: 13%;
   font: bold 66px/88px 'pt_serifbold', Arial, helvetica, sans-serif;
+  cursor: pointer;
+  transition: opacity 2s ease-out;
+}
+.main__title:hover{
+  opacity: 1;
 }
 
 .main__title-text_highlight {
@@ -107,6 +112,7 @@ body {
   height: 52px;
   margin: 0 0 41px 0;
   font: 400 22px/26px 'Roboto', Arial, helvetica, sans-serif;
+
 }
 
 .main__button{
@@ -121,6 +127,8 @@ body {
   width: 244px;
   height: 30px;
   text-align: center;
+  cursor: pointer;
+  transition: opacity 3s ease-out;
 }
 
 .main__button:hover {
@@ -222,7 +230,8 @@ body {
 /* END адаптация для 1024px*/
 
   /*адаптация 375px*/
-@media (max-width: 377px) {
+@media (max-width: 376px) {
+
   .wrapper {
     width: 87%;
   }
@@ -244,11 +253,10 @@ body {
   }
   .main {
     text-align: center;
-    padding-top:  80%;
-    padding-left: 33px;
+    padding:  80% 0 0 32px;
     background-size: 86%;
     background-position: top center;
-    
+
   }
   .main__title{
     margin-bottom: 54px;
@@ -258,7 +266,7 @@ body {
     height: 96px;
   }
   .main__sibtitle{
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
     width: 266px;
@@ -267,9 +275,10 @@ body {
   }
 
   .main__button{
-    font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
-    width: 209px;
-
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+    //width: 170px;
+    //padding: 15px 48px 11px 8px;
+    padding: 14px 25px 13px 16px;
   }
 
   /*бургер*/
