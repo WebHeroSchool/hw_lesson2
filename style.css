@@ -288,6 +288,7 @@ body {
   .main__title {
     margin-bottom: 39px;
     font-size: 40px;
+    line-height: 52px;
     }
 }
 
@@ -325,7 +326,7 @@ body {
       }
   }
 
-@media (max-width: 928px) {
+@media (max-width: 948px) {
   .wrapper {
     width: 88%;
       }
