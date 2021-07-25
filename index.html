@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf 8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Мой первый сайт</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
-</head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(83294410, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/83294410" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R0S8GN6HMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R0S8GN6HMR');
+</script>
+</head>
 <body>
   <div class="wrapper">
     <header class="header">
@@ -24,23 +47,20 @@
           <a class="menu__item" href="#">blog</a>
           <a class="menu__item" href="#">contact us</a>
        </nav>
- <!--бургер -->
- <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li><a class="menu__item" href="#">start</a></li>
-                <li><a class="menu__item" href="#">services</a></li>
-                <li><a class="menu__item" href="#">about</a></li>
-                <li><a class="menu__item" href="#">blog</a></li>
-                <li><a class="menu__item" href="#">contact us</a></li>
-        </ul>
-      </div>
-<!--бургер -->
-
-  </header>
+         <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">start</a></li>
+                        <li><a class="menu__item" href="#">services</a></li>
+                        <li><a class="menu__item" href="#">about</a></li>
+                        <li><a class="menu__item" href="#">blog</a></li>
+                        <li><a class="menu__item" href="#">contact us</a></li>
+                </ul>
+        </div>
+    </header>
   <section class="main">
     <main>
         <h1 class="main__title">Building an App
@@ -48,12 +68,12 @@
             Without Design Expertise</span>?
         </h1>
         <p class="main__sibtitle">I help tech startups design better digital products without hiring a full-time designer</p>
-      <a class="main__button wibro" href="#">Schedule free consultation</a>
+        <a class="main__button wibro" href="#">Schedule free consultation</a>
     </main>
-</section>
-  <div class="points">
-    <img src="img/points.jpg" alt="">
-  </div>
+  </section>
+    <div class="points">
+      <img src="img/points.jpg" alt="">
+    </div>
 </div>
 </body>
 </html>
