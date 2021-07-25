@@ -300,24 +300,24 @@ body {
       background-size: 55%;
       padding: 0 63% 129px 0;
       }
-    .main__title{
+    .main__title {
       margin-bottom: 40px;
       font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
       }
-    .main__sibtitle{
+    .main__sibtitle {
       margin-bottom: 32px;
       font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
       }
-    .main__button{
+    .main__button {
       font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+      padding: 13px 17px 8px 13px;
       width: 179px;
       height: 22px;
-      padding: 13px 19px 10px 11px;
       }
   }
 
 @media (max-width: 928px) {
-      .wrapper{
+      .wrapper {
         width: 88%;
       }
       .header {
