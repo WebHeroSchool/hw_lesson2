@@ -1,12 +1,11 @@
 body {
-margin: 0;
-width: 1920px;
-height: 1080px;
+  margin: 0;
 }
 
 .wrapper{
   margin: auto;
   width: 80%;
+  //padding: 0px 10%;
 }
 .header {
   display: flex;
@@ -39,7 +38,7 @@ height: 1080px;
   background: #C8DBFB;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 
@@ -51,10 +50,10 @@ height: 1080px;
   text-decoration: none;
 }
 
-.menu__item:last-child{
+.menu__item:last-child {
   margin-right:11px;
 }
-.menu__item_active::after{
+.menu__item_active::after {
   position: absolute;
   display: block;
   content:'';
@@ -64,7 +63,7 @@ height: 1080px;
   background: #0056EC;
 }
 
-.menu__item:after{
+.menu__item:after {
   position: absolute;
   left: 0;
   display: block;
@@ -85,10 +84,11 @@ height: 1080px;
 }
 
 /*раздел main*/
-.main{
+.main {
   padding:0 63% 250px 0;
   margin-right: 7px;
   background:top right no-repeat url(img/mainimg.jpg);
+
 }
 .main__title {
   width: 600px;
@@ -96,9 +96,14 @@ height: 1080px;
   margin: 0 0 44px 0;
   padding-top: 13%;
   font: bold 66px/88px 'pt_serifbold', Arial, helvetica, sans-serif;
+  cursor: pointer;
+  transition: opacity 2s ease-out;
+}
+.main__title:hover{
+  opacity: 1;
 }
 
-.main__title-text_highlight{
+.main__title-text_highlight {
   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%);
 }
 
@@ -107,16 +112,9 @@ height: 1080px;
   height: 52px;
   margin: 0 0 41px 0;
   font: 400 22px/26px 'Roboto', Arial, helvetica, sans-serif;
+
 }
 
-/*.main__button{
-  width: 209px;
-  height: 44px;
-  background: #0056EC;
-  border-radius: 4px;
-  color: #fff;
-  font: 14px/16px 'Roboto', Arial, helvetica, sans-serif;
-}*/
 .main__button{
   display: inline-block;
   font: 18px/21px 'Roboto', Arial, helvetica, sans-serif;
@@ -129,11 +127,82 @@ height: 1080px;
   width: 244px;
   height: 30px;
   text-align: center;
+  cursor: pointer;
+  transition: opacity 3s ease-out;
 }
 
 .main__button:hover {
   opacity: .5;
 }
+/*анимация */
+.wibro:hover {
+  -webkit-animation: 0.4s tremor ease-out infinite;
+  animation: 0.4s tremor ease-out infinite;
+}
+@-webkit-keyframes tremor {
+  0%, 25% {
+      left: -1px;
+      top:-1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      top: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-moz-keyframes tremor {
+  0%, 25% {
+      left: -1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-ms-keyframes tremor {
+  0%, 25% {
+      left: -1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-o-keyframes tremor {
+  0%, 25% {
+      left: -1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@keyframes tremor {
+  0%, 25% {
+      left: -1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+/*анимация дрож*/
+
 
 .points{
   width: 100%;
@@ -142,118 +211,359 @@ height: 1080px;
   justify-content: center;
 }
 
-/*адаптация*/
-@media (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-
-  .header {
-    margin-bottom: 28px;
+/*адаптация для 1571px*/
+@media (max-width: 1571px){
+.main__title {
+  font-size: 50px;
+  line-height: 66px;
+  }
+  .menu {
+    padding-top: 6px;
+  }
+  .main__title {
+    margin:  0;
   }
   .main {
-    text-align: center;
-    padding: 74% 0 0;
-    background-size: 74%;
-    background-position: top center;
+    background-size: 57%;
+  }
+}
+/*адаптация для 1366px*/
+
+@media (max-width: 1367px) {
+  .wrapper{
+    width: 68%;
+  }
+
+  .header {
+  margin-bottom: 82px;
+  }
+
+  .menu__item {
+    margin-right: 22px;
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+  }
+
+  .menu__item:last-child {
+  margin-right: 4px;
+  }
+  .main {
+    background-size: 55%;
+    padding-bottom: 125px;
+    margin-right: 0;
   }
   .main__title{
-    margin-bottom: 44px;
-    font: bold 30px/39px 'pt_serifbold', Arial, helvetica, sans-serif;
+    padding-top: 5%;
+    width: 434px;
+    height: 195px;
+    font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .main__sibtitle{
+    margin:0 0 33px 0;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    width: 367px;
+  }
+
+  .main__button{
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    width: 180px;
+    height: 20px;
+  }
+  .points{
+  }
+}
+/* END адаптация для 1366px*/
+
+/*адаптация для 1024px*/
+ @media (max-width: 1025px) {
+  .wrapper{
+    width: 91%;
+    //padding: 0px 46px;
+  }
+  .header {
+  margin-bottom: 85px;
+  }
+  .menu__item {
+  margin-right: 22px;
+  }
+  .menu__item:last-child {
+  margin-right: 1px;
+  }
+
+  .main {
+    background-size: 55%;
+    padding: 0 63% 250px 0;
+  }
+
+  .main__title{
+    margin-bottom: 40px;
+    font: bold 50px/66,25px 'pt_serifbold', Arial, helvetica, sans-serif;
   }
   .main__sibtitle{
-    margin-bottom: 25px;
-    font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
-    text-align: center;
+    margin-bottom: 32px;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   }
 
   .main__button{
     font:500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    width: 179px;
+    height: 17px;
   }
 
-/*бургер*/
-#menu__toggle {
-    opacity: 0;
+}
+/* END адаптация для 1024px*/
+@media (max-width: 769px){
+  .wrapper {
+    width: 87%;
   }
+  .menu {
+    display: none;
+  }
+  .hamburger-menu{
+    display: inline-block;
+  }
+
+  .main__title {
+    font-size: 37px;
+    line-height: 46px;
+    height: 136px;
+    }
+
+    .main {
+      background-size: 52%;
+      padding-bottom: 107px;
+    }
+
+    .main__sibtitle {
+      font-size: 16px;
+      line-height: 18px;
+      width: 342px;
+      margin-bottom: 14px;
+  }
+  /*бургер*/
+  #menu__toggle {
+          opacity: 0;
+        }
 
   #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
+          transform: rotate(45deg);
+        }
   #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
+          top: 0;
+          transform: rotate(0);
+        }
   #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
+          top: 0;
+          transform: rotate(90deg);
+        }
   #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
+          visibility: visible;
+          left: 0;
+        }
 
   .menu__btn {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 90%;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 28px;
+          left: 87%;
+          width: 25px;
+          height: 26px;
+          cursor: pointer;
+          z-index: 1;
+        }
 
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-    transition-duration: .25s;
-  }
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: #0056EC;
+          transition-duration: .25s;
+        }
   .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
+          content: '';
+          top: -8px;
+        }
   .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
+          content: '';
+          top: 8px;
+        }
 
   .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    text-align: center;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 186px 0;
-    list-style: none;
-    background-color: #E5E5E5;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    transition-duration: .25s;
-  }
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          text-align: center;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 171px 0;
+          list-style: none;
+          background-color: #fff;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          transition-duration: .25s;
+        }
 
   .menu__item {
-    display: block;
-    padding: 24px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    line-height: 35,16;
-    font-weight: 500;
-    text-decoration: none;
-    transition-duration: .25s;
-  }
+          display: block;
+          padding: 22px 24px;
+          color: #000;
+          font-family: 'Roboto', sans-serif;
+          font-size: 30px;
+          line-height: 35,16;
+          font-weight: 500;
+          text-decoration: none;
+          transition-duration: .25s;
+        }
   .menu__item:hover {
-    background-color: #eaf4f8;
-  }
-/*бургер*/
+          background-color: #fff;
+        }
+
 
 }
+  /*адаптация 375px*/
+@media (max-width: 376px) {
+
+  .wrapper {
+    width: 87%;
+  }
+
+  .hamburger-menu{
+    display: inline-block;
+  }
+  .menu {
+    display: none;
+  }
+
+  .header{
+    margin-bottom: 12px;
+  }
+
+  .logo {
+    padding: 22px 0;
+    font-size: 0;
+  }
+  .main {
+    text-align: center;
+    padding:  80% 0 0 32px;
+    background-size: 86%;
+    background-position: top center;
+
+  }
+  .main__title{
+    margin-bottom: 54px;
+    font: bold 30px/40px 'pt_serifbold', Arial, helvetica, sans-serif;
+    padding-top: 0;
+    width: 267px;
+    height: 96px;
+  }
+  .main__sibtitle{
+    margin: 0 0 25px 15px;
+    font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
+    text-align: center;
+    width: 81%;
+    height: 57px;
+
+  }
+
+  .main__button{
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+    margin-right: 10%;
+    padding: 15px 20px 13px 11px;
+  }
+
+  /*бургер*/
+  #menu__toggle {
+          opacity: 0;
+        }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+          transform: rotate(45deg);
+        }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0);
+        }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+  #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          left: 0;
+        }
+
+  .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 28px;
+          left: 87%;
+          width: 25px;
+          height: 26px;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: #0056EC;
+          transition-duration: .25s;
+        }
+  .menu__btn > span::before {
+          content: '';
+          top: -8px;
+        }
+  .menu__btn > span::after {
+          content: '';
+          top: 8px;
+        }
+
+  .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          text-align: center;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 171px 0;
+          list-style: none;
+          background-color: #fff;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          transition-duration: .25s;
+        }
+
+  .menu__item {
+          display: block;
+          padding: 22px 24px;
+          color: #000;
+          font-family: 'Roboto', sans-serif;
+          font-size: 30px;
+          line-height: 35,16;
+          font-weight: 500;
+          text-decoration: none;
+          transition-duration: .25s;
+        }
+  .menu__item:hover {
+          background-color: #fff;
+        }
+  .points {
+    visibility: hidden;
+  }
+      /*бургер*/
+  }
+/*end 375px*/
