@@ -32,7 +32,7 @@ body {
 }
 
 .logo__circle_color_dark-blue {
-  background: #0056EC;
+  background: #0056ec;
 }
 
 .logo__circle_color_blue {
@@ -44,6 +44,7 @@ body {
 .hamburger-menu {
   display: none;
 }
+
 .menu__item {
   position: relative;
   margin-right: 23px;
@@ -63,7 +64,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
 }
 
 .menu__item:after {
@@ -73,16 +74,17 @@ body {
   content:'';
   width: 0;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
   opacity: 0;
-  transition: opacity 0.5s, width .5s;
+  transition: opacity 0.5s, width 0.5s;
 }
 
 .menu__item:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.menu__item:hover:after, .menu__item_active:after {
+.menu__item:hover:after,
+.menu__item_active:after {
   opacity: 1;
   width: 100%;
 }
@@ -103,11 +105,11 @@ body {
   transition: opacity 2s ease-out;
 }
 
-.main__title:hover{
+.main__title:hover {
   opacity: 1;
 }
 .main__title-text_highlight {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ecf3ff  15%);
+  background: linear-gradient (180deg, rgba(255,255,255,1) 15%, #ecf3ff  15%);
 }
 
 .main__sibtitle {
@@ -116,11 +118,12 @@ body {
   margin: 0 0 41px 0;
   font: 400 22px/26px 'Roboto', Arial, helvetica, sans-serif;
 }
+
 .main__button {
   display: inline-block;
   font: 18px/21px 'Roboto', Arial, helvetica, sans-serif;
   color: #fff;
-  background: #0056EC;
+  background: #0056ec;
   padding: 18px 17px 8px 13px;
   text-decoration: none;
   border-radius: 4px;
@@ -133,7 +136,7 @@ body {
 }
 
 .main__button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .wibro:hover {
@@ -142,11 +145,11 @@ body {
 }
 
 @-webkit-keyframes tremor {
-    0%, 25% {
+  0%, 25% {
       left: -1px;
       top: -1px;
       -webkit-transform: translateX(-4%);
-      transform: translateX(-4%);
+    transform: translateX(-4%);
   }
   50%, 100% {
       left: 1px;
@@ -181,6 +184,7 @@ body {
       transform: translateX(4%);
   }
 }
+
 @-o-keyframes tremor {
   0%, 25% {
       left: -1px;
@@ -220,13 +224,13 @@ body {
     line-height: 66px;
   }
   .menu {
-      padding-top: 6px;
+    padding-top: 6px;
     }
   .main__title {
-      margin: 0;
+    margin: 0;
     }
   .main {
-      background-size: 57%;
+    background-size: 57%;
     }
 }
 
@@ -259,12 +263,12 @@ body {
     margin-bottom: 43px;
   }
 
-  .main__sibtitle{
+  .main__sibtitle {
     margin: 0 0 30px 0;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
     width: 367px;
   }
-  .main__button{
+  .main__button {
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     width: 180px;
     height: 20px;
@@ -290,59 +294,58 @@ body {
     .wrapper {
       width: 91%;
     }
-    .header {
-      margin-bottom: 85px;
+  .header {
+    margin-bottom: 85px;
     }
   .menu__item {
-      margin-right: 22px;
+    margin-right: 22px;
     }
     .menu__item:last-child {
       margin-right: 1px;
     }
-    .main {
-      background-size: 55%;
-      padding: 0 63% 129px 0;
+  .main {
+    background-size: 55%;
+    padding: 0 63% 129px 0;
       }
-    .main__title {
-      margin-bottom: 40px;
-      font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
+  .main__title {
+    margin-bottom: 40px;
+    font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
       }
     .main__sibtitle {
-      margin-bottom: 32px;
-      font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    margin-bottom: 32px;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
       }
     .main__button {
-      font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
-      padding: 13px 16px 13px 13px;
-      width: 179px;
-      height: 22px;
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    padding: 13px 16px 13px 13px;
+    width: 179px;
+    height: 22px;
       }
   }
 
 @media (max-width: 928px) {
       .wrapper {
-        width: 88%;
+    width: 88%;
       }
       .header {
-        margin-bottom: 85px;
+    margin-bottom: 85px;
       }
       .main__title {
-        font-size: 37px;
-        line-height: 46px;
-        height: 136px;
+    font-size: 37px;
+    line-height: 46px;
+    height: 136px;
         }
       .main {
-        background-size: 50%;
+    background-size: 50%;
     padding-bottom: 107px;
       }
       .main__sibtitle {
-        font-size: 16px;
-        line-height: 18px;
-        width: 342px;
-        margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 18px;
+    width: 342px;
+    margin-bottom: 14px;
       }
   }
-
   @media (max-width: 769px) {
   .wrapper {
     width: 87%;
@@ -362,97 +365,100 @@ body {
     background-size: 52%;
     padding-bottom: 107px;
     }
-  .main__sibtitle{
+  .main__sibtitle {
     margin: 0 0 23px 0;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
     width: 100%;
     height: 57px;
     }
-    #menu__toggle {
-      opacity: 0;
+
+  #menu__toggle {
+    opacity: 0;
     }
 
-    #menu__toggle:checked ~ .menu__btn > span {
-      transform: rotate(45deg);
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
           }
 
     #menu__toggle:checked ~ .menu__btn > span::before {
-            top: 0;
-            transform: rotate(0);
+    top: 0;
+    transform: rotate(0);
           }
 
     #menu__toggle:checked ~ .menu__btn > span::after {
-            top: 0;
-            transform: rotate(90deg);
+    top: 0;
+    transform: rotate(90deg);
           }
-    #menu__toggle:checked ~ .menu__box {
-            visibility: visible;
-            left: 0;
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
             }
 
-    .menu__btn {
-            display: flex;
-            align-items: center;
-            position: fixed;
-            top: 28px;
-            left: 87%;
-            width: 25px;
-            height: 26px;
-            cursor: pointer;
-            z-index: 1;
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 28px;
+    left: 87%;
+    width: 25px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
           }
 
-  .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background-color: #0056ec;
-        transition-duration: 0.25s;
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056ec;
+    transition-duration: 0.25s;
           }
 
-    .menu__btn > span::before {
-            content: '';
-            top: -8px;
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
           }
 
   .menu__btn > span::after {
-            content: '';
-            top: 8px;
+    content: '';
+    top: 8px;
           }
 
-    .menu__box {
-            display: block;
-            position: fixed;
-            visibility: hidden;
-            text-align: center;
-            top: 0;
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    text-align: center;
+    top: 0;
     left: -100%;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 171px 0;
-            list-style: none;
-            background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 171px 0;
+    list-style: none;
+    background-color: #fff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-            transition-duration: 0.25s;
+    transition-duration: 0.25s;
           }
 
-    .menu__item {
-            display: block;
-            padding: 22px 24px;
-            color: #000;
+  .menu__item {
+    display: block;
+    padding: 22px 24px;
+    color: #000;
     font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            line-height: 35;
-            font-weight: 500;
-            text-decoration: none;
-            transition-duration: 0.25s;
+    font-size: 30px;
+    line-height: 35;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.25s;
           }
 
     .menu__item:hover {
-            background-color: #fff;
+    background-color: #fff;
           }
 }
 
@@ -464,27 +470,25 @@ body {
     padding-top: 0;
   }
   .logo {
-      padding: 22px 0;
-      font-size: 0;
+    padding: 22px 0;
+    font-size: 0;
     }
 
     .main {
-      background-size: 50%;
+    background-size: 50%;
     }
 
-    .main__sibtitle{
+    .main__sibtitle {
       margin: 0;
       font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
       text-align: center;
       margin-bottom: 15%;
     }
-    .main__button{
+    .main__button {
       font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
       margin-right: 10%;
       padding: 15px 20px 10px 10px;
     }
-
-
 }
 
 @media (max-width: 671px) {
@@ -520,14 +524,14 @@ body {
     width: 256px;
     padding-top: 0;
   }
-  .main__sibtitle{
+  .main__sibtitle {
     margin: 0 0 15px -11px;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
     width: 81%;
     height: 57px;
   }
-  .main__button{
+  .main__button {
     font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
     margin-right: 27%;
     padding: 15px 20px 13px 11px;
@@ -561,21 +565,21 @@ body {
     background-size: 86%;
     background-position: top center;
   }
-  .main__title{
+  .main__title {
     margin-bottom: 54px;
     font: bold 30px/40px 'pt_serifbold', Arial, helvetica, sans-serif;
     padding-top: 0;
     width: 267px;
     height: 96px;
   }
-  .main__sibtitle{
+  .main__sibtitle {
     margin: 0 0 25px 15px;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
     width: 81%;
     height: 57px;
   }
-  .main__button{
+  .main__button {
     font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
     margin-right: 10%;
     padding: 15px 20px 10px 10px;
@@ -602,15 +606,15 @@ body {
         }
 
   .menu__btn {
-          display: flex;
-          align-items: center;
-          position: fixed;
-          top: 28px;
-          left: 87%;
-          width: 25px;
-          height: 26px;
-          cursor: pointer;
-          z-index: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 28px;
+    left: 87%;
+    width: 25px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
         }
 
   .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
@@ -626,7 +630,8 @@ body {
           content: '';
           top: -8px;
         }
-  .menu__btn > span::after {
+
+        .menu__btn > span::after {
           content: '';
           top: 8px;
         }
@@ -644,7 +649,7 @@ body {
           padding: 171px 0;
           list-style: none;
           background-color: #fff;
-          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 6px rgba (0, 0, 0, 0.2);
           transition-duration: 0.25s;
         }
 
