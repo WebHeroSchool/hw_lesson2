@@ -282,12 +282,12 @@ body {
   }
 
   .main {
-    background-size: 52%;
+    background-size: 48%;
     }
 
   .main__title {
     margin-bottom: 39px;
-    font-size: 46px;
+    font-size: 40px;
     }
 }
 
