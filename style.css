@@ -225,7 +225,7 @@ body {
   }
   .menu {
     padding-top: 6px;
-    }
+  }
   .main__title {
     margin: 0;
     }
@@ -300,8 +300,8 @@ body {
   .menu__item {
     margin-right: 22px;
     }
-    .menu__item:last-child {
-      margin-right: 1px;
+  .menu__item:last-child {
+    margin-right: 1px;
     }
   .main {
     background-size: 55%;
@@ -311,7 +311,7 @@ body {
     margin-bottom: 40px;
     font: bold 50px/66px 'pt_serifbold', Arial, helvetica, sans-serif;
       }
-    .main__sibtitle {
+  .main__sibtitle {
     margin-bottom: 32px;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
       }
@@ -346,6 +346,7 @@ body {
     margin-bottom: 14px;
       }
   }
+
   @media (max-width: 769px) {
   .wrapper {
     width: 87%;
@@ -381,12 +382,12 @@ body {
     transform: rotate(45deg);
           }
 
-    #menu__toggle:checked ~ .menu__btn > span::before {
+  #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
           }
 
-    #menu__toggle:checked ~ .menu__btn > span::after {
+  #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
           }
@@ -457,7 +458,7 @@ body {
     transition-duration: 0.25s;
           }
 
-    .menu__item:hover {
+  .menu__item:hover {
     background-color: #fff;
           }
 }
@@ -479,15 +480,15 @@ body {
     }
 
     .main__sibtitle {
-      margin: 0;
-      font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
-      text-align: center;
-      margin-bottom: 15%;
+    margin: 0;
+    font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 15%;
     }
     .main__button {
-      font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
-      margin-right: 10%;
-      padding: 15px 20px 10px 10px;
+    font: 500 14px/17px 'Roboto', arial, helvetica, sans-serif;
+    margin-right: 10%;
+    padding: 15px 20px 10px 10px;
     }
 }
 
@@ -509,8 +510,8 @@ body {
     }
 
   .logo {
-      padding: 22px 0;
-      font-size: 0;
+    padding: 22px 0;
+    font-size: 0;
     }
   .main {
     text-align: center;
@@ -586,23 +587,23 @@ body {
   }
 
   #menu__toggle {
-          opacity: 0;
+    opacity: 0;
         }
 
   #menu__toggle:checked ~ .menu__btn > span {
-          transform: rotate(45deg);
+    transform: rotate(45deg);
         }
   #menu__toggle:checked ~ .menu__btn > span::before {
-          top: 0;
-          transform: rotate(0);
+    top: 0;
+    transform: rotate(0);
         }
   #menu__toggle:checked ~ .menu__btn > span::after {
-          top: 0;
-          transform: rotate(90deg);
+    top: 0;
+    transform: rotate(90deg);
         }
   #menu__toggle:checked ~ .menu__box {
-          visibility: visible;
-          left: 0;
+    visibility: visible;
+    left: 0;
         }
 
   .menu__btn {
@@ -618,54 +619,54 @@ body {
         }
 
   .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 3px;
-          background-color: #0056ec;
-          transition-duration: 0.25s;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056ec;
+    transition-duration: 0.25s;
         }
 
   .menu__btn > span::before {
-          content: '';
-          top: -8px;
+    content: '';
+    top: -8px;
         }
 
-        .menu__btn > span::after {
-          content: '';
-          top: 8px;
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
         }
 
   .menu__box {
-          display: block;
-          position: fixed;
-          visibility: hidden;
-          text-align: center;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 171px 0;
-          list-style: none;
-          background-color: #fff;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    text-align: center;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 171px 0;
+    list-style: none;
+    background-color: #fff;
     box-shadow: 1px 0px 6px rgba (0, 0, 0, 0.2);
-          transition-duration: 0.25s;
+    transition-duration: 0.25s;
         }
 
   .menu__item {
-          display: block;
-          padding: 22px 24px;
-          color: #000;
-          font-family: 'Roboto', sans-serif;
-          font-size: 30px;
-          line-height: 35;
-          font-weight: 500;
-          text-decoration: none;
-          transition-duration: 0.25s;
+    display: block;
+    padding: 22px 24px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 35;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.25s;
         }
   .menu__item:hover {
-          background-color: #fff;
+    background-color: #fff;
         }
 
   .points {
